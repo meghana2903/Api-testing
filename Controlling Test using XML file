@@ -1,0 +1,67 @@
+----------------------------------------method 1---------------------------
+package introductiontoTestng;
+import org.testng.annotations.Test;
+
+class method1 {
+	@Test
+	public void demo1() {
+		System.out.println("hey1-METHOD 1");
+	}
+	@Test
+	public void demo2() {
+		System.out.println("hey2-METHOD 1");
+	}
+}
+----------------------------------------method 2---------------------------
+
+package introductiontoTestng;
+
+import org.testng.annotations.Test;
+
+class method2 {
+	@Test
+	public void demo1() {
+		System.out.println("hey this is METHOD 2");
+	}
+
+}
+
+----------------------------------------method 3---------------------------
+package introductiontoTestng;
+
+import org.testng.annotations.Test;
+
+public class method3 {
+	@Test
+	public void demo1() {
+		System.out.println("hey this is METHOD 3");
+	}
+	@Test
+	public void demo2() {
+		System.out.println("hey this is METHOD 3");
+	}
+}
+
+----------------------------------------xml file---------------------------
+  <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Personal lOAN">
+
+	</test>
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="introductiontoTestng.method1" />
+			<methods>
+				<exclude name="demo1" />
+			</methods>
+			<class name="introductiontoTestng.method2" />
+		</classes>
+
+	</test>
+
+	<test name="car loan">
+		<class name="introductiontoTestng.method3">
+		</class>
+	</test>
+</suite>
