@@ -43,25 +43,28 @@ public class method3 {
 }
 
 ----------------------------------------xml file---------------------------
-  <?xml version="1.0" encoding="UTF-8"?>
+ <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-	<test name="Personal lOAN">
 
-	</test>
-	<test thread-count="5" name="Test">
+	<test name="Personal lOAN">
 		<classes>
 			<class name="introductiontoTestng.method1" />
-			<methods>
-				<exclude name="demo1" />
-			</methods>
 			<class name="introductiontoTestng.method2" />
+
 		</classes>
 
 	</test>
 
 	<test name="car loan">
-		<class name="introductiontoTestng.method3">
-		</class>
+		<classes>
+
+			<class name="introductiontoTestng.method3">
+				<methods>
+					<exclude name="demo1" />
+				</methods>
+				</class>
+		</classes>
+		
 	</test>
 </suite>
