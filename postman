@@ -1,0 +1,6 @@
+pm.test("status code test" ,function(){
+pm.response.to.have.status(200)});
+
+pm.test("checj json data",function(){
+   pm.expect(response.Json.type).to.eqls('units')
+})
