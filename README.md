@@ -1,1 +1,0 @@
-All about TestNG framework
